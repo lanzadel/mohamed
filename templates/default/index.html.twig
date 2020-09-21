@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Call{% endblock %}
+
+{% block body %}
+
+        <div class="container">
+            <h1>Call</h1>
+            <div class="form_errors col-md-12">
+                {{ form_errors(form.phoneNumber) }}
+            </div>
+                {{ form_start(form) }}
+
+                {{ form_widget(form) }}
+
+            <button type="submit" class="btn btn-primary">Créer la nouvelle annonce</button>
+
+                {{ form_end(form) }}
+        </div>
+
+{% endblock %}
